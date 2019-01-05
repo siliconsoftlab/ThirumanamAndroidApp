@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools" android:id="@+id/nav_graph"
+            app:startDestination="@id/loginFragment">
+
+    <fragment android:id="@+id/loginFragment" android:name="silicon.thirumanam.com.thirumanam.LoginFragment"
+              android:label="fragment_login" tools:layout="@layout/fragment_login">
+        <action android:id="@+id/toUserRegisterationFragment"
+                app:destination="@id/userRegisterationFragment" app:popUpTo="@+id/homeFragment"/>
+        <action android:id="@+id/toHomeFragment" app:destination="@id/homeFragment"/>
+        <action android:id="@+id/action_loginFragment_to_userProfileFragment"
+                app:destination="@id/userProfileFragment"/>
+    </fragment>
+    <fragment android:id="@+id/userRegisterationFragment"
+              android:name="silicon.thirumanam.com.thirumanam.UserRegisterationFragment"
+              android:label="fragment_user_registeration" tools:layout="@layout/fragment_user_registeration"/>
+    <fragment android:id="@+id/homeFragment" android:name="silicon.thirumanam.com.thirumanam.HomeFragment"
+              android:label="fragment_home" tools:layout="@layout/fragment_home">
+        <action android:id="@+id/toTestFragment" app:destination="@id/testFragment" app:popUpTo="@+id/loginFragment"/>
+    </fragment>
+    <fragment android:id="@+id/testFragment" android:name="silicon.thirumanam.com.thirumanam.TestFragment"
+              android:label="fragment_test" tools:layout="@layout/fragment_test"/>
+    <fragment android:id="@+id/userProfileFragment" android:name="silicon.thirumanam.com.thirumanam.User.UserProfileFragment"
+              android:label="fragment_user_profile" tools:layout="@layout/fragment_user_profile"/>
+</navigation>

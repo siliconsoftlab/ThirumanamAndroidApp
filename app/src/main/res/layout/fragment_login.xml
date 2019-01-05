@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto"
+                                             xmlns:tools="http://schemas.android.com/tools"
+                                             android:layout_width="match_parent"
+                                             android:layout_height="match_parent"
+                                             tools:context=".LoginFragment" android:id="@+id/frameLayout">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <Button
+            android:text="Login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/lgn_btn"
+            android:layout_marginTop="44dp"
+            app:layout_constraintTop_toBottomOf="@+id/pwdTv" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="84dp" android:layout_marginRight="84dp"/>
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:hint="Id"
+            android:ems="10"
+            android:id="@+id/idTv" android:layout_marginTop="40dp"
+            app:layout_constraintTop_toTopOf="parent" android:layout_marginStart="8dp"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="8dp" android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginRight="8dp"
+            app:layout_constraintHorizontal_bias="0.503" android:text="250"/>
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:hint="password"
+            android:ems="10"
+            android:id="@+id/pwdTv" android:layout_marginTop="20dp"
+            app:layout_constraintTop_toBottomOf="@+id/idTv" android:layout_marginStart="8dp"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="8dp" android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginRight="8dp"
+            app:layout_constraintHorizontal_bias="0.503" android:text="India"/>
+    <TextView
+            android:text="New User?"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/registerTv"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="84dp" android:layout_marginStart="84dp"
+            android:layout_marginTop="60dp" app:layout_constraintTop_toBottomOf="@+id/pwdTv"/>
+    <CheckBox
+            android:text="Remember Id Password?"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rememberCkbx"
+            android:layout_marginTop="212dp"
+            app:layout_constraintTop_toBottomOf="@+id/pwdTv" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="8dp" android:layout_marginStart="8dp"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp" android:layout_marginRight="8dp"/>
+</android.support.constraint.ConstraintLayout>
